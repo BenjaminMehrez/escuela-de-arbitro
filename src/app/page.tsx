@@ -12,7 +12,7 @@ function HomPage() {
     <>
       <Hero />
       <Abouts />
-      {/* <CTA /> */}
+      <CTA />
       <Courses />
       <Testimonials />
       <WhyChooseUs />

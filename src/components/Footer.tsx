@@ -5,7 +5,7 @@ import Whatsapp from "./icons/Whatsapp";
 export default function Footer() {
   return (
     <footer className="bg-slate-900 pb-15 pt-10">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center text-white text-center text-sm">
+      <div className="max-w-7xl md:px-6 lg:px-0 mx-auto flex flex-col md:flex-row justify-between items-center text-white text-center text-sm">
         <div className="md:text-[17px] md:text-start">
           <p className="">
             © {new Date().getFullYear()} Escuela de Arbitraje. Todos los

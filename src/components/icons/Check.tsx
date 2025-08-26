@@ -13,6 +13,7 @@ function Check({
       strokeWidth="3"
       stroke="currentColor"
       className={className}
+      onClick={onClick}
     >
       <path
         strokeLinecap="round"

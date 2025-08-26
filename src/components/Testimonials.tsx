@@ -12,11 +12,11 @@ export default function Testimonials() {
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>
-              "Entré a la academia sin experiencia y en pocos meses adquirí la
+              Entré a la academia sin experiencia y en pocos meses adquirí la
               confianza y el conocimiento necesarios para dirigir partidos. Los
               instructores siempre están atentos y nos preparan no solo en lo
               técnico, sino también en lo mental y físico. Hoy ya arbitro
-              torneos locales y siento que tengo un futuro en el arbitraje."
+              torneos locales y siento que tengo un futuro en el arbitraje.
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image
@@ -33,11 +33,11 @@ export default function Testimonials() {
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>
-              "Lo que más destaco es la seriedad y el profesionalismo de la
+              Lo que más destaco es la seriedad y el profesionalismo de la
               formación. La academia me enseñó a aplicar el reglamento con
               criterio y seguridad, además de la importancia de la comunicación
               dentro de la cancha. Gracias a esta preparación, pude superar mis
-              primeras pruebas oficiales con excelentes resultados."
+              primeras pruebas oficiales con excelentes resultados.
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image
@@ -54,11 +54,11 @@ export default function Testimonials() {
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>
-              "La experiencia en la academia superó mis expectativas. No solo
+              La experiencia en la academia superó mis expectativas. No solo
               aprendí sobre reglas, posicionamiento y toma de decisiones, sino
               que también desarrollé valores como la disciplina y el respeto.
               Siento que estoy creciendo como árbitro y como persona, y eso es
-              gracias al gran equipo de docentes y compañeros."
+              gracias al gran equipo de docentes y compañeros.
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image

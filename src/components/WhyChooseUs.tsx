@@ -39,11 +39,9 @@ export default function WhyChooseUs() {
             <span className="text-blue-500 font-bold">Años de experiencia</span>
           </div>
         </div>
-        <div>
-          <button className="bg-blue-500 text-white font-bold py-3 px-8 rounded mt-10">
-            Inscribirme
-          </button>
-        </div>
+        <button className="flex mx-auto md:mx-0 bg-blue-500 text-white font-bold py-3 px-8 rounded mt-10">
+          Inscribirme
+        </button>
       </div>
     </section>
   );
