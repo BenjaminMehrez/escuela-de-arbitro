@@ -1,13 +1,20 @@
+'use client';
 import Whistle from "./icons/Whistle";
 import Certificate from "./icons/Certificate";
 import Image from "next/image";
 import Check from "./icons/Check";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Abouts() {
+  useEffect(() => {
+    AOS.init()
+  }, []);
   return (
     <section className="max-w-7xl mx-auto my-30 flex px-6">
       <div className="flex flex-col md:flex-row justify-between w-full md:gap-10 lg:gap-0">
-        <div className="relative w-full mb-[75%] sm:mb-[50%] md:mb-0 h-fit">
+        <div data-aos="fade-right" className="relative w-full mb-[75%] sm:mb-[50%] md:mb-0 h-fit">
           {/* Imagen principal */}
           <Image
             src="/aboutimg1.png"
@@ -29,7 +36,7 @@ export default function Abouts() {
           </div>
         </div>
 
-        <div className="md:max-w-[50%]">
+        <div data-aos="fade-left" className="md:max-w-[50%]">
           <h4 className="text-lg font-extralight mb-3">
             <span className="text-blue-400 font-medium mr-2">/ /</span> Acerca
             de Nosotros
@@ -42,14 +49,14 @@ export default function Abouts() {
             En la Escuela de Arbitraje, creemos que dirigir un partido es mucho más que aplicar reglas: es liderazgo, respeto y compromiso con el juego. Con años de experiencia y un equipo de instructores certificados, nos dedicamos a formar árbitros preparados para enfrentar cualquier desafío dentro y fuera de la cancha.
 
           </p>
-          <div className="pt-10 flex flex-col lg:flex-row items-center lg:gap-10 divide-y-2 lg:divide-x-2 lg:divide-y-0 divide-gray-300">
-            <div className="flex flex-col lg:flex-row gap-4 items-center pb-5 lg:p-0 lg:pr-10">
+          <div className="pt-10 flex flex-col xl:flex-row items-center xl:gap-10 divide-y-2 xl:divide-x-2 xl:divide-y-0 divide-gray-300">
+            <div className="flex flex-col xl:flex-row gap-4 items-center pb-5 xl:p-0 xl:pr-10">
               <Whistle className="rounded-full bg-blue-400 w-12 h-12 p-3 text-white" />
-              <span className="text-center lg:text-start lg:w-50">Formación con instructores profesionales</span>
+              <span className="text-center xl:text-start xl:w-50">Formación con instructores profesionales</span>
             </div>
-            <div className="flex flex-col lg:flex-row gap-4 items-center pt-5 lg:p-0">
+            <div className="flex flex-col xl:flex-row gap-4 items-center pt-5 xl:p-0">
               <Certificate className="rounded-full bg-blue-400 w-12 h-12 p-3 text-white" />
-              <span className="text-center lg:text-start lg:w-50">Programas avalados y actualizados</span>
+              <span className="text-center xl:text-start xl:w-50">Programas avalados y actualizados</span>
             </div>
           </div>
           <div className="mt-10 flex flex-col gap-4">

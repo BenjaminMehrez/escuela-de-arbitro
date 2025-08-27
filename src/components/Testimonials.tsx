@@ -1,14 +1,22 @@
+"use client";
 import Image from "next/image";
 import Quote from "./icons/Quote";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function Testimonials() {
+  useEffect(() => {
+    AOS.init()
+  }, []);
+
   return (
     <section className="py-30 px-6 text-gray-900 max-w-7xl mx-auto">
-      <h2 className="text-4xl mb-20 md:mb-0 font-bold text-center">
+      <h2 className="text-4xl mb-20 lg:mb-0 font-bold text-center">
         Que dicen nuestros egresados
       </h2>
-      <div className="flex flex-col md:flex-row items-center justify-center gap-10">
-        <div className="max-w-sm bg-blue-100 p-8 rounded-xl">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-10">
+        <div data-aos="fade-up" className="max-w-sm bg-blue-100 p-8 rounded-xl">
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>
@@ -29,7 +37,7 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="md:mt-40 max-w-sm bg-blue-100 p-8 rounded-xl">
+        <div data-aos="fade-up" data-aos-duration="1000" className="lg:mt-40 max-w-sm bg-blue-100 p-8 rounded-xl">
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>
@@ -50,7 +58,7 @@ export default function Testimonials() {
             </div>
           </div>
         </div>
-        <div className="max-w-sm bg-blue-100 p-8 rounded-xl">
+        <div data-aos="fade-up" className="max-w-sm bg-blue-100 p-8 rounded-xl">
           <Quote className="mb-7 w-8 h-8" />
           <div className="flex flex-col gap-8">
             <p>

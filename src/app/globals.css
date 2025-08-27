@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import "aos/dist/aos.css";
 @plugin "daisyui" {
   themes: light --default;
 }
@@ -61,6 +62,26 @@
   from {
     opacity: 0;
     transform: translateY(70px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.card-testimonial {
+  opacity: 0;
+  transform: translateY(-70px);
+}
+
+.card-testimonial.active {
+  animation: slideDown 0.7s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-70px);
   }
   to {
     opacity: 1;

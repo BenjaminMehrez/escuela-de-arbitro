@@ -1,20 +1,28 @@
+'use client';
 import Image from "next/image";
+import AOS from 'aos'
+import "aos/dist/aos.css";
+import { useEffect } from "react";
 
 export default function WhyChooseUs() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
-    <section className="max-w-7xl mx-auto flex flex-col md:flex-row-reverse justify-between py-20 px-6 text-gray-900">
+    <section className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse justify-between py-20 px-6 text-gray-900">
       <Image
+        data-aos="fade-left"
         className="rounded-xl object-cover object-center"
         width={600}
         height={600}
         src="/aboutus-img.jpg"
         alt="advantages-image"
       />
-      <div>
+      <div data-aos="fade-right">
         <div className="mt-10 flex flex-col gap-8 text-[#243E63]">
           <h2 className="text-5xl font-extrabold">
             ¿Por qué{" "}
-            <span className="italic text-white bg-blue-500 px-2 pb-1 rounded">
+            <span className="italic text-white bg-blue-500 px-2 pb-1 mt-4 w-fit block rounded lg:inline">
               elegirnos?
             </span>
           </h2>

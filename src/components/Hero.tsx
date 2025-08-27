@@ -10,7 +10,7 @@ export default function Hero() {
     <section className="banner relative px-6">
       {/* Nav móvil */}
       <header
-        className={`fixed top-0 left-0 pt-30 px-8 z-10 bg-slate-900 text-white w-full h-[60vh]
+        className={`absolute top-0 left-0 pt-30 px-8 z-10 bg-slate-900 text-white w-full h-[60vh]
         transform transition-transform duration-500 ease-in-out rounded-b-4xl
         ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
       >
@@ -105,7 +105,7 @@ export default function Hero() {
         </nav>
       </header>
 
-      <div className="mt-40 max-w-7xl mx-auto text-white hero-title">
+      <div className="mt-30 max-w-7xl mx-auto text-white hero-title">
         <h1 className="text-3xl md:text-5xl font-bold space-y-3">
           Formamos a los 
           <hr className="border-0"/>
