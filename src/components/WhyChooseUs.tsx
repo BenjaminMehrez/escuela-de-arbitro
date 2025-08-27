@@ -1,24 +1,24 @@
-'use client';
+"use client";
 import Image from "next/image";
-import AOS from 'aos'
+import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
 export default function WhyChooseUs() {
   useEffect(() => {
-    AOS.init()
-  }, [])
+    AOS.init();
+  }, []);
   return (
     <section className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse justify-between py-20 px-6 text-gray-900">
       <Image
-        data-aos="fade-left"
+        data-aos="fade-up"
         className="rounded-xl object-cover object-center"
         width={600}
         height={600}
         src="/aboutus-img.jpg"
         alt="advantages-image"
       />
-      <div data-aos="fade-right">
+      <div data-aos="fade-up">
         <div className="mt-10 flex flex-col gap-8 text-[#243E63]">
           <h2 className="text-5xl font-extrabold">
             ¿Por qué{" "}
@@ -47,7 +47,7 @@ export default function WhyChooseUs() {
             <span className="text-blue-500 font-bold">Años de experiencia</span>
           </div>
         </div>
-        <button className="flex mx-auto md:mx-0 bg-blue-500 text-white font-bold py-3 px-8 rounded mt-10">
+        <button className="bg-blue-500 text-white font-bold py-3 px-6 rounded mt-10 w-full md:w-fit">
           Inscribirme
         </button>
       </div>
