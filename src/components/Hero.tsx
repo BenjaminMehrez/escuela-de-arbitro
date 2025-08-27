@@ -10,12 +10,12 @@ export default function Hero() {
     <section className="banner relative px-6">
       {/* Nav móvil */}
       <header
-        className={`absolute top-0 left-0 pt-30 px-8 z-10 bg-slate-900 text-white w-full h-[60vh]
+        className={`absolute top-0 left-0 pt-30 px-8 z-10 bg-slate-900 text-white w-full h-[75vh]
         transform transition-transform duration-500 ease-in-out rounded-b-4xl
         ${isOpen ? "translate-y-0" : "-translate-y-full"}`}
       >
-        <nav>
-          <ul className="flex flex-col gap-6 font-bold text-xl">
+        <nav className="mt-10 ">
+          <ul className="flex flex-col gap-8 font-bold text-xl">
             <li className="w-fit border-b-3 border-b-transparent active:border-blue-500 transition-all duration-300">
               Inicio
             </li>
@@ -117,7 +117,7 @@ export default function Hero() {
         </p>
         <a
           href="#formulario"
-          className="mt-10 inline-block px-8 py-4 bg-blue-400 font-semibold text-lg rounded-lg shadow hover:bg-blue-500 transition duration-300 cursor-pointer"
+          className="mt-10 inline-block px-8 py-4 bg-blue-500 font-semibold text-lg rounded-lg shadow hover:mt-8 transition-all duration-300 cursor-pointer"
         >
           Inscribite ahora
         </a>

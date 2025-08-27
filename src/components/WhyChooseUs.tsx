@@ -15,7 +15,7 @@ export default function WhyChooseUs() {
         className="rounded-xl object-cover object-center"
         width={600}
         height={600}
-        src="/aboutus-img.jpg"
+        src="/whyusimg.png"
         alt="advantages-image"
       />
       <div data-aos="fade-up">
@@ -27,10 +27,13 @@ export default function WhyChooseUs() {
             </span>
           </h2>
           <p className="text-gray-500 font-semibold text-sm max-w-xl">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat.
+            Nos destacamos por un método de enseñanza integral que combina
+            teoría, práctica en cancha y desarrollo personal, garantizando que
+            cada árbitro esté preparado para dirigir con seguridad y confianza
+            en cualquier nivel competitivo.
+          </p>
+          <p className="text-gray-500 font-semibold text-sm max-w-xl">
+            Nuestra misión es impulsar tu crecimiento en el arbitraje brindándote capacitación de calidad, instructores certificados y una red de oportunidades que abrirá las puertas a tu futuro deportivo.
           </p>
         </div>
         <div className="mt-10 flex flex-col md:flex-row gap-8 text-center">

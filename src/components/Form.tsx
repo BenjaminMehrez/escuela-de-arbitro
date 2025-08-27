@@ -31,7 +31,7 @@ export default function Form() {
         />
         <button
           type="submit"
-          className="w-full p-3 bg-blue-400 text-white font-semibold rounded hover:bg-blue-700"
+          className="w-full p-3 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700"
         >
           Enviar inscripción
         </button>

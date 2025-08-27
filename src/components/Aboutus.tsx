@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import Whistle from "./icons/Whistle";
 import Certificate from "./icons/Certificate";
 import Image from "next/image";
@@ -9,12 +9,15 @@ import { useEffect } from "react";
 
 export default function Abouts() {
   useEffect(() => {
-    AOS.init()
+    AOS.init();
   }, []);
   return (
     <section className="max-w-7xl mx-auto my-30 flex px-6">
       <div className="flex flex-col md:flex-row justify-between w-full md:gap-10 lg:gap-0">
-        <div data-aos="fade-right" className="relative w-full mb-[75%] sm:mb-[50%] md:mb-0 h-fit">
+        <div
+          data-aos="fade-right"
+          className="relative w-full mb-[75%] sm:mb-[50%] md:mb-0 h-fit"
+        >
           {/* Imagen principal */}
           <Image
             src="/aboutimg1.png"
@@ -37,17 +40,19 @@ export default function Abouts() {
         </div>
 
         <div data-aos="fade-left" className="md:max-w-[50%]">
-          <h4 className="text-lg font-extralight mb-3">
+          <h4 className="text-lg font-light mb-3">
             <span className="text-blue-500 font-medium mr-2">/ /</span> Acerca
             de Nosotros
           </h4>
-          <h3 className="text-3xl font-bold md:text-4xl">
+          <h3 className="text-3xl font-bold md:text-4xln text-[#243E63]">
             Descubre Nuestra Pasión por la Formación Arbitral
-
           </h3>
           <p className="my-5 font-light">
-            En la Escuela de Arbitraje, creemos que dirigir un partido es mucho más que aplicar reglas: es liderazgo, respeto y compromiso con el juego. Con años de experiencia y un equipo de instructores certificados, nos dedicamos a formar árbitros preparados para enfrentar cualquier desafío dentro y fuera de la cancha.
-
+            En la Escuela de Arbitraje, creemos que dirigir un partido es mucho
+            más que aplicar reglas: es liderazgo, respeto y compromiso con el
+            juego. Con años de experiencia y un equipo de instructores
+            certificados, nos dedicamos a formar árbitros preparados para
+            enfrentar cualquier desafío dentro y fuera de la cancha.
           </p>
           <div className="flex flex-col gap-5">
             <div className="pl-0 p-3 flex items-center gap-4">
@@ -73,7 +78,7 @@ export default function Abouts() {
               <span className="">Oportunidades en ligas y torneos</span>
             </div>
           </div>
-          <button className="bg-blue-500 text-white font-bold py-3 px-6 rounded mt-10 w-full md:w-fit">
+          <button className="bg-blue-500 text-white font-semibold py-3 rounded mt-10 w-full md:w-fit cursor-pointer hover:bg-blue-600 transition duration-300">
             Inscribirme
           </button>
         </div>
