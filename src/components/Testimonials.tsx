@@ -28,7 +28,7 @@ export default function Testimonials() {
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image
-                src="/customer-1.png"
+                src="/customer1.png"
                 alt="testimonials-image"
                 width={50}
                 height={50}
@@ -49,7 +49,7 @@ export default function Testimonials() {
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image
-                src="/customer-2.png"
+                src="/customer2.png"
                 alt="testimonials-image"
                 width={50}
                 height={50}
@@ -70,7 +70,7 @@ export default function Testimonials() {
             </p>
             <div className="flex gap-4 items-center mx-auto">
               <Image
-                src="/customer-3.png"
+                src="/customer3.png"
                 alt="testimonials-image"
                 width={50}
                 height={50}
